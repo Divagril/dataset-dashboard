@@ -1,0 +1,45 @@
+.filters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  text-align: left;
+}
+
+.filter-item label {
+  margin-bottom: 0.5rem;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #555;
+}
+
+.filter-item select,
+.filter-item input {
+  padding: 0.6em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.filter-item.price-range {
+  grid-column: span 2; /* Hacer que ocupe más espacio */
+}
+
+.filter-item input[type="range"] {
+  width: 100%;
+  padding: 0;
+}
